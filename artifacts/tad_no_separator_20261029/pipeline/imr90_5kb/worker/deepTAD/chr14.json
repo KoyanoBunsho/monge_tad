@@ -1,0 +1,15 @@
+{
+  "method": "deepTAD",
+  "chromosome": "chr14",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 0.8503064999822527,
+  "load_filter_seconds": 0.515447000041604,
+  "validation": {
+    "output_matches": true,
+    "domains": 1215,
+    "reference_domains": 1215,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

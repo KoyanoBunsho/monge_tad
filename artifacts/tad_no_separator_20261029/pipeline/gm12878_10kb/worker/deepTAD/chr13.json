@@ -1,0 +1,15 @@
+{
+  "method": "deepTAD",
+  "chromosome": "chr13",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 2.8864782908931375,
+  "load_filter_seconds": 2.6138417499605566,
+  "validation": {
+    "output_matches": true,
+    "domains": 598,
+    "reference_domains": 598,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

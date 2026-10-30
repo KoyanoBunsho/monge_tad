@@ -1,0 +1,15 @@
+{
+  "method": "KY-W",
+  "chromosome": "chr18",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 1.7630198749247938,
+  "load_filter_seconds": 1.3119619169738144,
+  "validation": {
+    "output_matches": true,
+    "domains": 359,
+    "reference_domains": 359,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

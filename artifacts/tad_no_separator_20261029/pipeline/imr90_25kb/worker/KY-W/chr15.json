@@ -1,0 +1,15 @@
+{
+  "method": "KY-W",
+  "chromosome": "chr15",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 0.6256653340533376,
+  "load_filter_seconds": 0.4063915419392288,
+  "validation": {
+    "output_matches": true,
+    "domains": 233,
+    "reference_domains": 233,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

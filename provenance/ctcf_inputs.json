@@ -1,0 +1,49 @@
+[
+  {
+    "accession": "GSM749704",
+    "path": "data/raw/deeptad_functional/GSM749704_GM12878_CTCF_hg19.narrowPeak.gz",
+    "sha256": "23c513c07a61a4af82357cf7abeb9389436615e9f729e27a57c46ccaf8ab4110",
+    "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM749704",
+    "assembly": "hg19"
+  },
+  {
+    "accession": "ENCFF738TKN",
+    "path": "data/raw/tad_metric_validation_20261024/ENCFF738TKN.bed.gz",
+    "sha256": "df67297656d5c7a0844ee08da90d736efc6eae63ecff06d2628932bb3ebab222",
+    "url": "https://www.encodeproject.org/files/ENCFF738TKN/@@download/ENCFF738TKN.bed.gz",
+    "assembly": "hg19",
+    "md5": "8635b84f3c5785702257302d4b4b8f8a"
+  },
+  {
+    "accession": "ENCFF453XKM",
+    "path": "data/raw/tad_metric_validation_20261024/ENCFF453XKM.bed.gz",
+    "sha256": "dfb761cc9be0ab64701f691cc58cf30e1732b1d290764ce710d08c2a715339b1",
+    "url": "https://www.encodeproject.org/files/ENCFF453XKM/@@download/ENCFF453XKM.bed.gz",
+    "assembly": "hg19",
+    "md5": "7012df7b06605f9a5fb69695e1a4178e"
+  },
+  {
+    "accession": "ENCFF796WRU",
+    "path": "data/raw/tad_metric_validation_20261024/ENCFF796WRU.bed.gz",
+    "sha256": "7ea474655164efc20954d2ef3eb7f0448e5676818b0041360c4c185927492ae3",
+    "url": "https://www.encodeproject.org/files/ENCFF796WRU/@@download/ENCFF796WRU.bed.gz",
+    "assembly": "GRCh38",
+    "md5": "3f36655eb9a421a542ff031fc7b5e9aa"
+  },
+  {
+    "accession": "ENCFF203SRF",
+    "path": "data/raw/tad_metric_validation_20261024/ENCFF203SRF.bed.gz",
+    "sha256": "3d31c07a6308772c5482013eaedc8a4b531e1beece4a4a95152fd95fbda9152f",
+    "url": "https://www.encodeproject.org/files/ENCFF203SRF/@@download/ENCFF203SRF.bed.gz",
+    "assembly": "GRCh38",
+    "md5": "05f81289bed92a5217ca85d4054f9494"
+  },
+  {
+    "accession": "ENCFF901CBP",
+    "path": "data/raw/tad_metric_validation_20261024/ENCFF901CBP.bed.gz",
+    "sha256": "2bb67e9e97b5c824aab4645a563ce95be0b3c202a871689f1de01f2869b025ba",
+    "url": "https://www.encodeproject.org/files/ENCFF901CBP/@@download/ENCFF901CBP.bed.gz",
+    "assembly": "GRCh38",
+    "md5": "1217ff33657577191b73110a4348f6e4"
+  }
+]

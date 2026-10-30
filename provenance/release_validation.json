@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-30",
+  "python": "3.12.11",
+  "tests_passed": 33,
+  "install": "uv sync --offline --extra dev in an independent virtual environment",
+  "checks": [
+    "All 154 benchmark chromosome records and 4601 optimization regions",
+    "42 complete accuracy comparisons among 56 method/condition combinations",
+    "Ours and deepTAD totals reconstructed from all 22 timing records per condition",
+    "44 biological comparisons and 1819 evaluated parents",
+    "Example and nine command-line entry points",
+    "No embedded credentials or machine-specific /Users paths found"
+  ],
+  "scope": "Large-data experiments were not rerun during packaging; deposited outputs and their aggregation were verified"
+}

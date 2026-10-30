@@ -1,0 +1,15 @@
+{
+  "method": "KY-W",
+  "chromosome": "chr10",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 25.52555249980651,
+  "load_filter_seconds": 3.110219541937113,
+  "validation": {
+    "output_matches": true,
+    "domains": 1671,
+    "reference_domains": 1671,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

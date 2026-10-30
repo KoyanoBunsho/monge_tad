@@ -1,0 +1,15 @@
+{
+  "method": "deepTAD",
+  "chromosome": "chr8",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 0.8695332079660147,
+  "load_filter_seconds": 0.7983333331067115,
+  "validation": {
+    "output_matches": true,
+    "domains": 246,
+    "reference_domains": 246,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

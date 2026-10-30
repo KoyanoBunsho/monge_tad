@@ -1,0 +1,143 @@
+{
+  "chromosomes": [
+    "chr19"
+  ],
+  "maximum_tad_bp": 10000000,
+  "resolution": 25000,
+  "rows": [
+    {
+      "chromosome": "chr19",
+      "matrix_bins": 2365,
+      "method": "ontad",
+      "metrics": {
+        "all_domains": {
+          "domains": 212,
+          "dual_end_ctcf_evaluated": 212,
+          "dual_end_ctcf_rate": 0.7783018867924528,
+          "dual_end_ctcf_supported": 165,
+          "mean_contact_contrast": 0.2943601366912801,
+          "mean_tad_adjusted_r2": 0.3653170138204093
+        },
+        "parent_domains": {
+          "domains": 83,
+          "dual_end_ctcf_evaluated": 83,
+          "dual_end_ctcf_rate": 0.7228915662650602,
+          "dual_end_ctcf_supported": 60,
+          "mean_contact_contrast": 0.3289210305565268,
+          "mean_tad_adjusted_r2": 0.24038588516830353
+        }
+      },
+      "output": "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/native_callers/chr19/ontad/HIC002_25k_KR.chr19.tad",
+      "run": {
+        "command": [
+          "third_party/OnTAD/src/OnTAD",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/matrices/HIC002_25k_KR.chr19",
+          "-penalty",
+          "0.1",
+          "-maxsz",
+          "400",
+          "-minsz",
+          "3",
+          "-o",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/native_callers/chr19/ontad/HIC002_25k_KR.chr19"
+        ],
+        "log": "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/native_callers/chr19/ontad/HIC002_25k_KR.chr19.log",
+        "returncode": 0,
+        "status": "completed",
+        "timeout_seconds": 1800.0,
+        "wall_seconds": 1.3429789170622826
+      }
+    },
+    {
+      "chromosome": "chr19",
+      "matrix_bins": 2365,
+      "method": "dedoc2",
+      "metrics": {
+        "all_domains": {
+          "domains": 163,
+          "dual_end_ctcf_evaluated": 163,
+          "dual_end_ctcf_rate": 0.7607361963190185,
+          "dual_end_ctcf_supported": 124,
+          "mean_contact_contrast": 0.19538201591735987,
+          "mean_tad_adjusted_r2": 0.36094357687306355
+        },
+        "parent_domains": {
+          "domains": 46,
+          "dual_end_ctcf_evaluated": 46,
+          "dual_end_ctcf_rate": 0.7608695652173914,
+          "dual_end_ctcf_supported": 35,
+          "mean_contact_contrast": 0.25343508141140997,
+          "mean_tad_adjusted_r2": 0.2855197900703575
+        }
+      },
+      "output": "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/native_callers/chr19/dedoc2/HIC002_25k_KR.chr19.TAD",
+      "run": {
+        "command": [
+          "java",
+          "-jar",
+          "third_party/deDoc2/deDoc2.jar",
+          "-inputfile",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/matrices/HIC002_25k_KR.chr19",
+          "-binsize",
+          "25",
+          "-outputfile",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/native_callers/chr19/dedoc2/HIC002_25k_KR.chr19",
+          "-maxTLDsize",
+          "10"
+        ],
+        "log": "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/native_callers/chr19/dedoc2/HIC002_25k_KR.chr19.log",
+        "returncode": 0,
+        "status": "completed",
+        "timeout_seconds": 1800.0,
+        "wall_seconds": 4.469634917099029
+      }
+    },
+    {
+      "chromosome": "chr19",
+      "matrix_bins": 2365,
+      "method": "jontads",
+      "metrics": {
+        "all_domains": {
+          "domains": 130,
+          "dual_end_ctcf_evaluated": 130,
+          "dual_end_ctcf_rate": 0.6461538461538462,
+          "dual_end_ctcf_supported": 84,
+          "mean_contact_contrast": 0.17093914846074904,
+          "mean_tad_adjusted_r2": 0.2977957395012169
+        },
+        "parent_domains": {
+          "domains": 52,
+          "dual_end_ctcf_evaluated": 52,
+          "dual_end_ctcf_rate": 0.6346153846153846,
+          "dual_end_ctcf_supported": 33,
+          "mean_contact_contrast": 0.1373224621077446,
+          "mean_tad_adjusted_r2": 0.2342667844911343
+        }
+      },
+      "output": "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/native_callers/chr19/jontads/HIC002_25k_KR.chr19.tad",
+      "run": {
+        "command": [
+          "third_party/venvs/jontads/bin/python",
+          "third_party/JOnTADS/JOnTADS/JOnTADS.py",
+          "-F",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/matrices/HIC002_25k_KR.chr19",
+          "-O",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/native_callers/chr19/jontads/HIC002_25k_KR.chr19.tad",
+          "-MAXSZ",
+          "400",
+          "-MINSZ",
+          "7",
+          "--seed",
+          "0"
+        ],
+        "log": "./artifacts/tad_all_chromosomes_20261022/gm12878_25kb/native_callers/chr19/jontads/HIC002_25k_KR.chr19.log",
+        "returncode": 0,
+        "status": "completed",
+        "timeout_seconds": 1800.0,
+        "wall_seconds": 36.29205375001766
+      }
+    }
+  ],
+  "sample_prefix": "HIC002",
+  "schema_version": 1
+}

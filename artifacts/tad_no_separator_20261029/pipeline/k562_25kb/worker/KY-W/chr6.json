@@ -1,0 +1,15 @@
+{
+  "method": "KY-W",
+  "chromosome": "chr6",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 1.46955612488091,
+  "load_filter_seconds": 1.0538162919692695,
+  "validation": {
+    "output_matches": true,
+    "domains": 358,
+    "reference_domains": 358,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

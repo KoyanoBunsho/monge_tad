@@ -1,0 +1,15 @@
+{
+  "method": "KY-W",
+  "chromosome": "chr8",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 18.0479729170911,
+  "load_filter_seconds": 3.616787875071168,
+  "validation": {
+    "output_matches": true,
+    "domains": 1409,
+    "reference_domains": 1409,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

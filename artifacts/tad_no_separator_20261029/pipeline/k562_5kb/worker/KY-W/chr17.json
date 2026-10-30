@@ -1,0 +1,15 @@
+{
+  "method": "KY-W",
+  "chromosome": "chr17",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 3.3110292910132557,
+  "load_filter_seconds": 0.5818932082038373,
+  "validation": {
+    "output_matches": true,
+    "domains": 1203,
+    "reference_domains": 1203,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

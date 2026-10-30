@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "monge-tad"
+version = "0.1.0"
+description = "Fast hierarchical TAD assembly using the Monge property"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Bunsho Koyano"}]
+dependencies = ["numpy>=2.0", "scipy>=1.14", "cooler>=0.10,<1", "h5py>=3.11", "pandas>=2.2", "psutil>=6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.urls]
+Repository = "https://github.com/KoyanoBunsho/monge_tad"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/faster_cky"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

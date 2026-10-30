@@ -1,0 +1,15 @@
+{
+  "method": "KY-W",
+  "chromosome": "chr11",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 0.9908602088689804,
+  "load_filter_seconds": 0.7434509589802474,
+  "validation": {
+    "output_matches": true,
+    "domains": 291,
+    "reference_domains": 291,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

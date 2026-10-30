@@ -1,0 +1,31 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Objective variants, evaluated on all 22 autosomes with equal chromosome weights. CTCF gives the percentage of parent domains with peaks within $\pm10$ kb of both endpoints. Intra-inter difference values at 5 kb are multiplied by $10^4$. The best value for each metric and combination is shown in bold.}
+\label{tab:objective-comparison}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrrrr@{}}
+\toprule
+Variant & GM12878 & GM12878 & K562 & IMR90 & GM12878 & K562 & IMR90\\
+ & 25 kb & 10 kb & 25 kb & 25 kb & 5 kb & 5 kb & 5 kb\\
+\midrule
+\multicolumn{8}{l}{Adjusted $R^2$}\\
+Ours & \bestvalue{0.1822} & 0.0819 & 0.0913 & 0.2298 & 0.1392 & \bestvalue{0.0703} & \bestvalue{0.1105}\\
+\cmidrule(lr){1-8}
+No length & 0.1818 & \bestvalue{0.0821} & \bestvalue{0.0925} & \bestvalue{0.2314} & \bestvalue{0.1406} & 0.0702 & 0.1091\\
+Length only & 0.1444 & 0.0586 & 0.0804 & 0.1924 & 0.0863 & 0.0426 & 0.0618\\
+\midrule
+\multicolumn{8}{l}{Intra-inter difference}\\
+Ours & 44.797 & 16.108 & 6.797 & 40.943 & 56.962 & \bestvalue{66.779} & 88.431\\
+\cmidrule(lr){1-8}
+No length & \bestvalue{46.107} & \bestvalue{16.505} & \bestvalue{6.810} & \bestvalue{41.811} & \bestvalue{57.606} & 66.204 & \bestvalue{89.998}\\
+Length only & 43.365 & 15.219 & 6.435 & 38.440 & 54.562 & 63.742 & 88.163\\
+\midrule
+\multicolumn{8}{l}{CTCF (\%)}\\
+Ours & \bestvalue{30.02} & 41.30 & 38.08 & \bestvalue{37.24} & 49.09 & 58.37 & 50.69\\
+\cmidrule(lr){1-8}
+No length & 29.64 & \bestvalue{41.65} & \bestvalue{39.16} & 37.09 & \bestvalue{49.32} & \bestvalue{59.30} & \bestvalue{52.04}\\
+Length only & 28.52 & 35.68 & 35.60 & 35.24 & 45.25 & 50.58 & 41.31\\
+\bottomrule
+\end{tabular*}
+\end{table}

@@ -1,0 +1,15 @@
+{
+  "method": "deepTAD",
+  "chromosome": "chr17",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 2.4327895829919726,
+  "load_filter_seconds": 1.5700719580054283,
+  "validation": {
+    "output_matches": true,
+    "domains": 1150,
+    "reference_domains": 1150,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

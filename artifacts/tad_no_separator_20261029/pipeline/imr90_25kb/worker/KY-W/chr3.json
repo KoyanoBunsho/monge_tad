@@ -1,0 +1,15 @@
+{
+  "method": "KY-W",
+  "chromosome": "chr3",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 2.011618416989222,
+  "load_filter_seconds": 1.4277887088246644,
+  "validation": {
+    "output_matches": true,
+    "domains": 388,
+    "reference_domains": 388,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

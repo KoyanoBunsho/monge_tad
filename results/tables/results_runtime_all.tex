@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Computation time (s) for all 22 autosomes per combination of cell line and resolution. Times include all stages from prepared matrices to output. We report times only for completed combinations and show the shortest time in each combination in bold.}
+\label{tab:runtime}
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{1.0}
+\setlength{\aboverulesep}{1pt}
+\setlength{\belowrulesep}{1pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrrrr@{}}
+\toprule
+Method & GM12878 & GM12878 & K562 & IMR90 & GM12878 & K562 & IMR90\\
+ & 25 kb & 10 kb & 25 kb & 25 kb & 5 kb & 5 kb & 5 kb\\
+\midrule
+Ours & 83.2 & 280.0 & 75.7 & 79.4 & 1046.6 & 849.7 & 1288.4\\
+\midrule
+deepTAD & 77.7 & 248.5 & 70.7 & 74.9 & \bestvalue{381.2} & \bestvalue{377.8} & \bestvalue{364.5}\\
+OnTAD & 106.2 & 845.6 & 134.9 & 120.3 & 3008.9 & 3302.3 & 3030.5\\
+JOnTADS & 900.6 & 1202.5 & 1303.8 & 884.3 & \multicolumn{3}{c}{memory error}\\
+deDoc2 & 214.3 & \multicolumn{1}{c}{memory error} & 221.6 & 258.5 & \multicolumn{3}{c}{memory error}\\
+RobusTAD & 909.4 & 3025.2 & 993.1 & 1691.5 & \multicolumn{3}{c}{timeout; memory error}\\
+SpectralTAD & \bestvalue{59.1} & \bestvalue{121.5} & \bestvalue{61.2} & \bestvalue{59.1} & 541.7 & 548.0 & 541.2\\
+HiTAD & 1107.2 & \multicolumn{1}{c}{timeout} & 987.1 & 1226.9 & \multicolumn{1}{c}{memory error} & \multicolumn{2}{c}{timeout}\\
+\bottomrule
+\end{tabular*}
+\end{table}

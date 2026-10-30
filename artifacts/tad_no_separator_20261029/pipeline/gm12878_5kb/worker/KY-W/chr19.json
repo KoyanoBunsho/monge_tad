@@ -1,0 +1,15 @@
+{
+  "method": "KY-W",
+  "chromosome": "chr19",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 1.8191386251710355,
+  "load_filter_seconds": 0.25750795821659267,
+  "validation": {
+    "output_matches": true,
+    "domains": 805,
+    "reference_domains": 805,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

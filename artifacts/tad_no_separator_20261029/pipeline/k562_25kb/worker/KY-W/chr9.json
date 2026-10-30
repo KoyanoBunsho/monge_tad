@@ -1,0 +1,15 @@
+{
+  "method": "KY-W",
+  "chromosome": "chr9",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 0.8706789158750325,
+  "load_filter_seconds": 0.6523291249759495,
+  "validation": {
+    "output_matches": true,
+    "domains": 254,
+    "reference_domains": 254,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "validation_complete": true,
+  "methods": {
+    "robustad-no-panel": {
+      "source_commit": "6d1497eb1cc4334ed6880e6c3adc6cc439d97cd9",
+      "source_sha256": {
+        "third_party/RobusTAD/robustad/clean.py": "358dbf470f9e1f9a45c94e7ee8568cfee698bc08123a2277cd4be2d8ff728fd3"
+      },
+      "change": "Copy the existing cleanTAD shape guard into addback before indexing the 17x17 template; retain cornerpcc=-1 fallback.",
+      "patch_sha256": "453535916fc7c31bf1106016f7822c8a8f9ed5e0681212aaa7877f961cd73e12"
+    },
+    "robustad-panel": {
+      "source_commit": "6d1497eb1cc4334ed6880e6c3adc6cc439d97cd9",
+      "source_sha256": {
+        "third_party/RobusTAD/robustad/clean.py": "358dbf470f9e1f9a45c94e7ee8568cfee698bc08123a2277cd4be2d8ff728fd3"
+      },
+      "change": "Copy the existing cleanTAD shape guard into addback before indexing the 17x17 template; retain cornerpcc=-1 fallback.",
+      "patch_sha256": "453535916fc7c31bf1106016f7822c8a8f9ed5e0681212aaa7877f961cd73e12"
+    },
+    "spectraltad": {
+      "package_version": "1.28.2",
+      "source_sha256": {
+        "scripts/run_spectraltad.R": "1178324a5f541da5753ade5465229168698cc076f75b9ef48c31497b02a9c453",
+        "scripts/patch_spectraltad_silhouette.R": "f0030d38ff008b608e340932e46ddee19f45a2659eb3f7010490c39d71cff6db"
+      },
+      "change": "Represent undefined candidate silhouettes by NA; preserve defined scores, candidate positions, and native selection/fallback rules.",
+      "documentation": "https://stat.ethz.ch/R-manual/R-devel/library/cluster/html/silhouette.html"
+    }
+  },
+  "validation": {
+    "robustad": "Four truncated corners reproduce the original IndexError; corrected calls return existing fallback. A valid corner retains the accepted domain.",
+    "spectraltad": "Original failure reproduced with a degenerate candidate; corrected call completes. Ten synthetic and three real contact-map windows give identical domain coordinates on valid inputs.",
+    "limits": "Small regression examples are not benchmark results. Full chromosomes are rerun separately; no change to input matrices, parameters, 1800-second timeout or 20-GiB limit.",
+    "files_sha256": {
+      "artifacts/tad_baseline_retries_20261026/validation/python_tests.log": "b79d46eb31822d3964be8fccb2c51a085730c08d0e7d1bd28f2a357541b4a77e",
+      "artifacts/tad_baseline_retries_20261026/validation/spectraltad.log": "aa012273003e859daa65c70365b275a39c98a0f4c9fe6b9b0f7cfa84fc3480e4",
+      "tests/test_tad_upstream_repairs.py": "636d33cf0488f735c04527e0a4221300ac5e6137239334b81b49c63b0d0fcf8a",
+      "tests/check_spectraltad_repair.R": "355bbf9e925dd78afbbf3cf4550308f9edb6b6e5ef280c834fb87d9c4240162c"
+    }
+  }
+}

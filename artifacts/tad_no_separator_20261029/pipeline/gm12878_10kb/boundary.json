@@ -1,0 +1,124 @@
+{
+  "chromosomes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22"
+  ],
+  "records": [
+    {
+      "chromosome": "chr1",
+      "matrix_loading_and_patch_seconds": 11.905039749806747
+    },
+    {
+      "chromosome": "chr2",
+      "matrix_loading_and_patch_seconds": 11.230180541984737
+    },
+    {
+      "chromosome": "chr3",
+      "matrix_loading_and_patch_seconds": 7.03479849989526
+    },
+    {
+      "chromosome": "chr4",
+      "matrix_loading_and_patch_seconds": 6.581816666992381
+    },
+    {
+      "chromosome": "chr5",
+      "matrix_loading_and_patch_seconds": 5.918115749955177
+    },
+    {
+      "chromosome": "chr6",
+      "matrix_loading_and_patch_seconds": 5.318777625216171
+    },
+    {
+      "chromosome": "chr7",
+      "matrix_loading_and_patch_seconds": 4.639059833949432
+    },
+    {
+      "chromosome": "chr8",
+      "matrix_loading_and_patch_seconds": 3.9134407499805093
+    },
+    {
+      "chromosome": "chr9",
+      "matrix_loading_and_patch_seconds": 3.6103478751610965
+    },
+    {
+      "chromosome": "chr10",
+      "matrix_loading_and_patch_seconds": 3.3930099161807448
+    },
+    {
+      "chromosome": "chr11",
+      "matrix_loading_and_patch_seconds": 3.381530958926305
+    },
+    {
+      "chromosome": "chr12",
+      "matrix_loading_and_patch_seconds": 3.335447832942009
+    },
+    {
+      "chromosome": "chr13",
+      "matrix_loading_and_patch_seconds": 2.4409010000526905
+    },
+    {
+      "chromosome": "chr14",
+      "matrix_loading_and_patch_seconds": 2.1308809579350054
+    },
+    {
+      "chromosome": "chr15",
+      "matrix_loading_and_patch_seconds": 1.9315490419976413
+    },
+    {
+      "chromosome": "chr16",
+      "matrix_loading_and_patch_seconds": 1.5434711661655456
+    },
+    {
+      "chromosome": "chr17",
+      "matrix_loading_and_patch_seconds": 1.2872542501427233
+    },
+    {
+      "chromosome": "chr18",
+      "matrix_loading_and_patch_seconds": 1.1722909999080002
+    },
+    {
+      "chromosome": "chr19",
+      "matrix_loading_and_patch_seconds": 0.7024182910099626
+    },
+    {
+      "chromosome": "chr20",
+      "matrix_loading_and_patch_seconds": 0.7699330421164632
+    },
+    {
+      "chromosome": "chr21",
+      "matrix_loading_and_patch_seconds": 0.44406045810319483
+    },
+    {
+      "chromosome": "chr22",
+      "matrix_loading_and_patch_seconds": 0.5004209580365568
+    }
+  ],
+  "inference": {
+    "status": "completed",
+    "returncode": 0,
+    "seconds": 46.91945799998939,
+    "timeout_seconds": 1800
+  },
+  "shared_boundary_seconds": 130.10420416644774,
+  "scope": "matrix loading and patch preparation plus complete Docker invocation, model startup, prediction and intermediate output"
+}

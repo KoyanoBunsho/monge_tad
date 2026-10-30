@@ -1,0 +1,44 @@
+[
+  {
+    "name": "deepTAD",
+    "repository": "https://github.com/xiaoyan-wang99/deepTAD.git",
+    "revision": "713780e22fb70f07520c41493f9a590ac19cb4d9",
+    "path": "third_party/deepTAD"
+  },
+  {
+    "name": "OnTAD",
+    "repository": "https://github.com/anlin00007/OnTAD.git",
+    "revision": "dc36df93598bd2dce92fe6e1e97425a60c73178b",
+    "path": "third_party/OnTAD"
+  },
+  {
+    "name": "JOnTADS",
+    "repository": "https://github.com/qunhualilab/JOnTADS.git",
+    "revision": "27877af4f0d66f2ec5b05dcea4df5e55575a9c51",
+    "path": "third_party/JOnTADS"
+  },
+  {
+    "name": "RobusTAD",
+    "repository": "https://github.com/zhyanlin/RobusTAD.git",
+    "revision": "6d1497eb1cc4334ed6880e6c3adc6cc439d97cd9",
+    "path": "third_party/RobusTAD"
+  },
+  {
+    "name": "TADLib",
+    "repository": "https://github.com/XiaoTaoWang/TADLib.git",
+    "revision": "78640e3efbc7a393a2c918a68db502141e7f9b5b",
+    "path": "third_party/TADLib"
+  },
+  {
+    "name": "deDoc2",
+    "repository": "https://github.com/zengguangjie/deDoc2.git",
+    "revision": "82881a14d01b8bf523c189a4cb650299d95d1d23",
+    "path": "third_party/deDoc2",
+    "jar_sha256": "44015960a598cdcdedd0a28da91d5fb799330c352098b5d7e94ce1073f168cb9"
+  },
+  {
+    "name": "SpectralTAD",
+    "version": "1.28.2",
+    "repository": "https://bioconductor.org/packages/SpectralTAD/"
+  }
+]

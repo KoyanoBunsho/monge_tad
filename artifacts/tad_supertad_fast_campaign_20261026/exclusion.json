@@ -1,0 +1,23 @@
+{
+  "excluded": true,
+  "reason": "projected_budget_exceeded",
+  "estimate": {
+    "observations": 19,
+    "accuracy_completed": 19,
+    "serial_completed": 0,
+    "measured_seconds": 12919.249362333445,
+    "projected_seconds": 209346.68839496124,
+    "mean_accuracy_seconds": 679.6970402433807,
+    "mean_serial_seconds": 679.6970402433807,
+    "caller_only_observations": 1
+  },
+  "policy": {
+    "limit_seconds": 172800.0,
+    "scope": "SuperTAD-Fast accuracy runs and serial timing repetitions, including per-job preparation and evaluation; unrelated queue waiting is excluded.",
+    "minimum_observations": 6,
+    "consecutive_projections": 3,
+    "estimator": "Mean measured job duration multiplied by remaining required executions; update after each new result.",
+    "configured_at": "2026-10-26T12:47:14.425738+09:00"
+  },
+  "decided_at": "2026-10-26T21:57:34.107827+09:00"
+}

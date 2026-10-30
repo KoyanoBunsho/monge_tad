@@ -1,0 +1,15 @@
+{
+  "method": "deepTAD",
+  "chromosome": "chr6",
+  "objective_variant": "no_separator",
+  "post_inference_seconds": 2.024316041963175,
+  "load_filter_seconds": 1.0497699999250472,
+  "validation": {
+    "output_matches": true,
+    "domains": 1701,
+    "reference_domains": 1701,
+    "output_difference": 0,
+    "boundary_matches": true,
+    "gap_matches": true
+  }
+}

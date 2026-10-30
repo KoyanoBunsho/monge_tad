@@ -1,0 +1,351 @@
+{
+  "configuration": {
+    "chromosomes": [
+      "4"
+    ],
+    "ctcf_peaks": "./data/raw/contexttad/ContextTAD_reproducibility/data/1_dp_train_infer_data/annotations/gm12878_ctcf.bed",
+    "dataset": "GM12878_5kb_all_chromosomes",
+    "duration_scale": 800.0,
+    "filtered_dir": "./artifacts/tad_all_chromosomes_20261022/gm12878_5kb/filtered",
+    "match_deeptad_parent_count": false,
+    "matrix_dir": "./artifacts/tad_all_chromosomes_20261022/gm12878_5kb/matrices",
+    "maximum_distance": 300,
+    "maximum_parent_bp": 3000000,
+    "minimum_region_bins": 4,
+    "output_dir": "./artifacts/tad_all_chromosomes_20261022/gm12878_5kb/evaluation/chr4",
+    "parent_ratio": 0.259231905465288,
+    "peak_tolerance_bp": 10000,
+    "prediction_dir": "./artifacts/tad_all_chromosomes_20261022/gm12878_5kb/predictions",
+    "resolution": 5000,
+    "sample_prefix": "GM12878",
+    "timing_repeats": 3
+  },
+  "decoder_comparison": {
+    "CKY-W": {
+      "candidates": 215946,
+      "chromosomes": [
+        {
+          "chromosome": "chr4",
+          "domains": 1206,
+          "dual_end_ctcf_evaluated": 231,
+          "dual_end_ctcf_rate": 0.5064935064935064,
+          "dual_end_ctcf_supported": 117,
+          "mean_contact_contrast": 0.13553349423486794,
+          "mean_tad_adjusted_r2": 0.07323529768659595,
+          "parent_domains": 231
+        }
+      ],
+      "decoder_seconds": 0.0373242471832782,
+      "domains": 1206,
+      "dual_end_ctcf_evaluated": 231,
+      "dual_end_ctcf_rate": 0.5064935064935064,
+      "dual_end_ctcf_supported": 117,
+      "mean_contact_contrast": 0.13553349423486794,
+      "mean_tad_adjusted_r2": 0.07323529768659595,
+      "parent_domains": 231,
+      "tree_objective": 17330.067305265762
+    },
+    "Greedy-W": {
+      "candidates": 14155,
+      "chromosomes": [
+        {
+          "chromosome": "chr4",
+          "domains": 1206,
+          "dual_end_ctcf_evaluated": 231,
+          "dual_end_ctcf_rate": 0.4935064935064935,
+          "dual_end_ctcf_supported": 114,
+          "mean_contact_contrast": 0.13533057256453088,
+          "mean_tad_adjusted_r2": 0.07621338577951164,
+          "parent_domains": 231
+        }
+      ],
+      "decoder_seconds": 0.002206956734880805,
+      "domains": 1206,
+      "dual_end_ctcf_evaluated": 231,
+      "dual_end_ctcf_rate": 0.4935064935064935,
+      "dual_end_ctcf_supported": 114,
+      "mean_contact_contrast": 0.13533057256453088,
+      "mean_tad_adjusted_r2": 0.07621338577951164,
+      "parent_domains": 231,
+      "tree_objective": 18465.423580308703
+    },
+    "KY-W": {
+      "candidates": 27395,
+      "chromosomes": [
+        {
+          "chromosome": "chr4",
+          "domains": 1206,
+          "dual_end_ctcf_evaluated": 231,
+          "dual_end_ctcf_rate": 0.5064935064935064,
+          "dual_end_ctcf_supported": 117,
+          "mean_contact_contrast": 0.13553349423486794,
+          "mean_tad_adjusted_r2": 0.07323529768659595,
+          "parent_domains": 231
+        }
+      ],
+      "decoder_seconds": 0.012550039449706674,
+      "domains": 1206,
+      "dual_end_ctcf_evaluated": 231,
+      "dual_end_ctcf_rate": 0.5064935064935064,
+      "dual_end_ctcf_supported": 117,
+      "mean_contact_contrast": 0.13553349423486794,
+      "mean_tad_adjusted_r2": 0.07323529768659595,
+      "parent_domains": 231,
+      "tree_objective": 17330.067305265762
+    },
+    "Native deepTAD": {
+      "chromosomes": [
+        {
+          "chromosome": "chr4",
+          "domains": 1208,
+          "dual_end_ctcf_evaluated": 233,
+          "dual_end_ctcf_rate": 0.3218884120171674,
+          "dual_end_ctcf_supported": 75,
+          "mean_contact_contrast": 0.09985262623462361,
+          "mean_tad_adjusted_r2": 0.07436524496271157,
+          "parent_domains": 233
+        }
+      ],
+      "domains": 1208,
+      "dual_end_ctcf_evaluated": 233,
+      "dual_end_ctcf_rate": 0.3218884120171674,
+      "dual_end_ctcf_supported": 75,
+      "mean_contact_contrast": 0.09985262623462361,
+      "mean_tad_adjusted_r2": 0.07436524496271157,
+      "parent_domains": 233
+    }
+  },
+  "score_ablation": {
+    "duration_only": {
+      "chromosomes": [
+        {
+          "chromosome": "chr4",
+          "domains": 1206,
+          "dual_end_ctcf_evaluated": 231,
+          "dual_end_ctcf_rate": 0.47186147186147187,
+          "dual_end_ctcf_supported": 109,
+          "mean_contact_contrast": 0.10922528259688993,
+          "mean_tad_adjusted_r2": 0.053858171261605095,
+          "parent_domains": 231
+        }
+      ],
+      "domains": 1206,
+      "dual_end_ctcf_evaluated": 231,
+      "dual_end_ctcf_rate": 0.47186147186147187,
+      "dual_end_ctcf_supported": 109,
+      "mean_contact_contrast": 0.10922528259688993,
+      "mean_tad_adjusted_r2": 0.053858171261605095,
+      "objective": {
+        "cosine_weight": 0.0,
+        "direct_separator_weight": 0.0,
+        "duration_scale": 800.0,
+        "name": "duration_only",
+        "pair_transform": "hinge",
+        "pair_weight": 0.0,
+        "probability_weight": 0.0,
+        "profile_weight": 0.0,
+        "separator_pair_aggregation": "maximum",
+        "separator_pair_weight": 0.0
+      },
+      "parent_domains": 231
+    },
+    "full": {
+      "chromosomes": [
+        {
+          "chromosome": "chr4",
+          "domains": 1206,
+          "dual_end_ctcf_evaluated": 231,
+          "dual_end_ctcf_rate": 0.5064935064935064,
+          "dual_end_ctcf_supported": 117,
+          "mean_contact_contrast": 0.13553349423486794,
+          "mean_tad_adjusted_r2": 0.07323529768659595,
+          "parent_domains": 231
+        }
+      ],
+      "domains": 1206,
+      "dual_end_ctcf_evaluated": 231,
+      "dual_end_ctcf_rate": 0.5064935064935064,
+      "dual_end_ctcf_supported": 117,
+      "mean_contact_contrast": 0.13553349423486794,
+      "mean_tad_adjusted_r2": 0.07323529768659595,
+      "objective": {
+        "cosine_weight": 1.0,
+        "direct_separator_weight": 1.0,
+        "duration_scale": 800.0,
+        "name": "full",
+        "pair_transform": "hinge",
+        "pair_weight": 1.0,
+        "probability_weight": 0.0,
+        "profile_weight": 0.0,
+        "separator_pair_aggregation": "maximum",
+        "separator_pair_weight": 1.0
+      },
+      "parent_domains": 231
+    },
+    "no_boundary": {
+      "chromosomes": [
+        {
+          "chromosome": "chr4",
+          "domains": 1206,
+          "dual_end_ctcf_evaluated": 231,
+          "dual_end_ctcf_rate": 0.4935064935064935,
+          "dual_end_ctcf_supported": 114,
+          "mean_contact_contrast": 0.13779190437283914,
+          "mean_tad_adjusted_r2": 0.08391508977677686,
+          "parent_domains": 231
+        }
+      ],
+      "domains": 1206,
+      "dual_end_ctcf_evaluated": 231,
+      "dual_end_ctcf_rate": 0.4935064935064935,
+      "dual_end_ctcf_supported": 114,
+      "mean_contact_contrast": 0.13779190437283914,
+      "mean_tad_adjusted_r2": 0.08391508977677686,
+      "objective": {
+        "cosine_weight": 0.0,
+        "direct_separator_weight": 0.0,
+        "duration_scale": 800.0,
+        "name": "no_boundary",
+        "pair_transform": "hinge",
+        "pair_weight": 1.0,
+        "probability_weight": 0.0,
+        "profile_weight": 0.0,
+        "separator_pair_aggregation": "maximum",
+        "separator_pair_weight": 0.0
+      },
+      "parent_domains": 231
+    },
+    "no_contact_pair": {
+      "chromosomes": [
+        {
+          "chromosome": "chr4",
+          "domains": 1206,
+          "dual_end_ctcf_evaluated": 231,
+          "dual_end_ctcf_rate": 0.5064935064935064,
+          "dual_end_ctcf_supported": 117,
+          "mean_contact_contrast": 0.13072211463879782,
+          "mean_tad_adjusted_r2": 0.07024498435114068,
+          "parent_domains": 231
+        }
+      ],
+      "domains": 1206,
+      "dual_end_ctcf_evaluated": 231,
+      "dual_end_ctcf_rate": 0.5064935064935064,
+      "dual_end_ctcf_supported": 117,
+      "mean_contact_contrast": 0.13072211463879782,
+      "mean_tad_adjusted_r2": 0.07024498435114068,
+      "objective": {
+        "cosine_weight": 1.0,
+        "direct_separator_weight": 1.0,
+        "duration_scale": 800.0,
+        "name": "no_contact_pair",
+        "pair_transform": "hinge",
+        "pair_weight": 0.0,
+        "probability_weight": 0.0,
+        "profile_weight": 0.0,
+        "separator_pair_aggregation": "maximum",
+        "separator_pair_weight": 1.0
+      },
+      "parent_domains": 231
+    },
+    "no_direct_separator": {
+      "chromosomes": [
+        {
+          "chromosome": "chr4",
+          "domains": 1206,
+          "dual_end_ctcf_evaluated": 231,
+          "dual_end_ctcf_rate": 0.5064935064935064,
+          "dual_end_ctcf_supported": 117,
+          "mean_contact_contrast": 0.13392833648240637,
+          "mean_tad_adjusted_r2": 0.07249183211460536,
+          "parent_domains": 231
+        }
+      ],
+      "domains": 1206,
+      "dual_end_ctcf_evaluated": 231,
+      "dual_end_ctcf_rate": 0.5064935064935064,
+      "dual_end_ctcf_supported": 117,
+      "mean_contact_contrast": 0.13392833648240637,
+      "mean_tad_adjusted_r2": 0.07249183211460536,
+      "objective": {
+        "cosine_weight": 1.0,
+        "direct_separator_weight": 0.0,
+        "duration_scale": 800.0,
+        "name": "no_direct_separator",
+        "pair_transform": "hinge",
+        "pair_weight": 1.0,
+        "probability_weight": 0.0,
+        "profile_weight": 0.0,
+        "separator_pair_aggregation": "maximum",
+        "separator_pair_weight": 1.0
+      },
+      "parent_domains": 231
+    },
+    "no_duration": {
+      "chromosomes": [
+        {
+          "chromosome": "chr4",
+          "domains": 1206,
+          "dual_end_ctcf_evaluated": 231,
+          "dual_end_ctcf_rate": 0.49783549783549785,
+          "dual_end_ctcf_supported": 115,
+          "mean_contact_contrast": 0.13559404032970312,
+          "mean_tad_adjusted_r2": 0.07323455946646566,
+          "parent_domains": 231
+        }
+      ],
+      "domains": 1206,
+      "dual_end_ctcf_evaluated": 231,
+      "dual_end_ctcf_rate": 0.49783549783549785,
+      "dual_end_ctcf_supported": 115,
+      "mean_contact_contrast": 0.13559404032970312,
+      "mean_tad_adjusted_r2": 0.07323455946646566,
+      "objective": {
+        "cosine_weight": 1.0,
+        "direct_separator_weight": 1.0,
+        "duration_scale": null,
+        "name": "no_duration",
+        "pair_transform": "hinge",
+        "pair_weight": 1.0,
+        "probability_weight": 0.0,
+        "profile_weight": 0.0,
+        "separator_pair_aggregation": "maximum",
+        "separator_pair_weight": 1.0
+      },
+      "parent_domains": 231
+    },
+    "no_max_separator_pair": {
+      "chromosomes": [
+        {
+          "chromosome": "chr4",
+          "domains": 1206,
+          "dual_end_ctcf_evaluated": 231,
+          "dual_end_ctcf_rate": 0.5324675324675324,
+          "dual_end_ctcf_supported": 123,
+          "mean_contact_contrast": 0.13828099721297035,
+          "mean_tad_adjusted_r2": 0.07949080256739723,
+          "parent_domains": 231
+        }
+      ],
+      "domains": 1206,
+      "dual_end_ctcf_evaluated": 231,
+      "dual_end_ctcf_rate": 0.5324675324675324,
+      "dual_end_ctcf_supported": 123,
+      "mean_contact_contrast": 0.13828099721297035,
+      "mean_tad_adjusted_r2": 0.07949080256739723,
+      "objective": {
+        "cosine_weight": 1.0,
+        "direct_separator_weight": 1.0,
+        "duration_scale": 800.0,
+        "name": "no_max_separator_pair",
+        "pair_transform": "hinge",
+        "pair_weight": 1.0,
+        "probability_weight": 0.0,
+        "profile_weight": 0.0,
+        "separator_pair_aggregation": "maximum",
+        "separator_pair_weight": 0.0
+      },
+      "parent_domains": 231
+    }
+  }
+}

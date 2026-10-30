@@ -1,0 +1,11 @@
+--- a/robustad/clean.py
++++ b/robustad/clean.py
+@@ -214,7 +214,7 @@
+         for r in range(l+6,min([maxij,l+5000000//resol])):
+             if label[r] >= 2:
+                 corner = o2oe(data[l - 8:l + 9, r - 8:r + 9], l - 8, r - 8, diagExp)
+-                if np.sum(~np.isnan(corner)) > 100:
++                if corner.shape == looptpl.shape and np.sum(~np.isnan(corner)) > 100:
+                     cornerpcc = pcc(corner[~np.isnan(corner)], looptpl[~np.isnan(corner)])[0]
+                 else:
+                     cornerpcc = -1

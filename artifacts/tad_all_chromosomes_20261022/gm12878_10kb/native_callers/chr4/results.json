@@ -1,0 +1,125 @@
+{
+  "chromosomes": [
+    "chr4"
+  ],
+  "maximum_tad_bp": 10000000,
+  "resolution": 10000,
+  "rows": [
+    {
+      "chromosome": "chr4",
+      "matrix_bins": 19105,
+      "method": "ontad",
+      "metrics": {
+        "all_domains": {
+          "domains": 1195,
+          "dual_end_ctcf_evaluated": 1195,
+          "dual_end_ctcf_rate": 0.45439330543933054,
+          "dual_end_ctcf_supported": 543,
+          "mean_contact_contrast": 0.2602659374673314,
+          "mean_tad_adjusted_r2": 0.09632271355326222
+        },
+        "parent_domains": {
+          "domains": 453,
+          "dual_end_ctcf_evaluated": 453,
+          "dual_end_ctcf_rate": 0.58719646799117,
+          "dual_end_ctcf_supported": 266,
+          "mean_contact_contrast": 0.375957081346925,
+          "mean_tad_adjusted_r2": 0.08224830426897363
+        }
+      },
+      "output": "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/native_callers/chr4/ontad/HIC002_10k_KR.chr4.tad",
+      "run": {
+        "command": [
+          "third_party/OnTAD/src/OnTAD",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/matrices/HIC002_10k_KR.chr4",
+          "-penalty",
+          "0.1",
+          "-maxsz",
+          "1000",
+          "-minsz",
+          "3",
+          "-o",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/native_callers/chr4/ontad/HIC002_10k_KR.chr4"
+        ],
+        "log": "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/native_callers/chr4/ontad/HIC002_10k_KR.chr4.log",
+        "returncode": 0,
+        "status": "completed",
+        "timeout_seconds": 1800.0,
+        "wall_seconds": 72.31458508293144
+      }
+    },
+    {
+      "chromosome": "chr4",
+      "matrix_bins": 19105,
+      "method": "dedoc2",
+      "output": "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/native_callers/chr4/dedoc2/HIC002_10k_KR.chr4.TAD",
+      "run": {
+        "command": [
+          "java",
+          "-jar",
+          "third_party/deDoc2/deDoc2.jar",
+          "-inputfile",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/matrices/HIC002_10k_KR.chr4",
+          "-binsize",
+          "10",
+          "-outputfile",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/native_callers/chr4/dedoc2/HIC002_10k_KR.chr4",
+          "-maxTLDsize",
+          "10"
+        ],
+        "log": "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/native_callers/chr4/dedoc2/HIC002_10k_KR.chr4.log",
+        "returncode": 1,
+        "status": "failed",
+        "timeout_seconds": 1800.0,
+        "wall_seconds": 35.96969154197723
+      }
+    },
+    {
+      "chromosome": "chr4",
+      "matrix_bins": 19105,
+      "method": "jontads",
+      "metrics": {
+        "all_domains": {
+          "domains": 534,
+          "dual_end_ctcf_evaluated": 534,
+          "dual_end_ctcf_rate": 0.5112359550561798,
+          "dual_end_ctcf_supported": 273,
+          "mean_contact_contrast": 0.23333060662953706,
+          "mean_tad_adjusted_r2": 0.07705038399084851
+        },
+        "parent_domains": {
+          "domains": 197,
+          "dual_end_ctcf_evaluated": 197,
+          "dual_end_ctcf_rate": 0.5025380710659898,
+          "dual_end_ctcf_supported": 99,
+          "mean_contact_contrast": 0.2428535999232941,
+          "mean_tad_adjusted_r2": 0.05509435253453966
+        }
+      },
+      "output": "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/native_callers/chr4/jontads/HIC002_10k_KR.chr4.tad",
+      "run": {
+        "command": [
+          "third_party/venvs/jontads/bin/python",
+          "third_party/JOnTADS/JOnTADS/JOnTADS.py",
+          "-F",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/matrices/HIC002_10k_KR.chr4",
+          "-O",
+          "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/native_callers/chr4/jontads/HIC002_10k_KR.chr4.tad",
+          "-MAXSZ",
+          "1000",
+          "-MINSZ",
+          "7",
+          "--seed",
+          "0"
+        ],
+        "log": "./artifacts/tad_all_chromosomes_20261022/gm12878_10kb/native_callers/chr4/jontads/HIC002_10k_KR.chr4.log",
+        "returncode": 0,
+        "status": "completed",
+        "timeout_seconds": 1800.0,
+        "wall_seconds": 62.35292349988595
+      }
+    }
+  ],
+  "sample_prefix": "HIC002",
+  "schema_version": 1
+}

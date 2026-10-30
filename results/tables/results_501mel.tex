@@ -1,0 +1,29 @@
+\begin{samepage}
+\subsection{Parent-Domain Contacts after Reducing NIPBL Messenger RNA}
+\label{ssec:nipbl-structure}
+\label{ssec:biological-results}
+
+Using parent domains predicted from control 1, we compare the intra-inter difference at the same coordinates in control 2 and the NIPBL-targeting RNA sample from replicate set 2.
+We then predict parent domains from control 2 and evaluate them in control 1 and the NIPBL-targeting RNA sample from replicate set 1, as described in Section~\ref{ssec:nipbl-design}.
+\par
+\end{samepage}
+
+\begin{table}[H]
+\centering
+\caption{Average intra-inter difference $Q$ at fixed parent-domain coordinates in 501mel cells. NIPBL-targeting short hairpin RNA reduced NIPBL messenger RNA levels by approximately 56\%. We weight parent domains equally; each analysis covers all 22 autosomes. $\Delta Q$ is the average value for cells expressing NIPBL-targeting RNA minus the average value of the control. In the Combined row, we sum the parent-domain counts from the two analyses. We calculate differences before rounding.}
+\label{tab:nipbl-contact-quality}
+\small
+\begin{tabularx}{\linewidth}{@{}Xrrrr@{}}
+\toprule
+Evaluation & Parent domains & Unused control & NIPBL-targeting RNA & $\Delta Q$\\
+\midrule
+Parents predicted from control 1 & 922 & 0.8253 & 0.6463 & $-0.1791$\\
+Parents predicted from control 2 & 897 & 0.7928 & 0.6538 & $-0.1390$\\
+Combined & 1,819 & 0.8093 & 0.6500 & $-0.1593$\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Both comparisons in Table~\ref{tab:nipbl-contact-quality} show a smaller difference between internal and neighboring-domain contacts, consistent with the structural weakening reported by Wong and colleagues~\cite{wong2025hierarchy}.
+The agreement supports using predicted parent domains to characterize a known structural perturbation.
+The change in $Q$ combines changes in internal and neighboring-domain contacts over the same selected parent domains within each comparison.

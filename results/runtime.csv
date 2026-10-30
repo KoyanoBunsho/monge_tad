@@ -1,0 +1,57 @@
+condition,method,scope,unit,expected_units,completed_units,attempted_units,complete,complete_seconds,observed_attempt_seconds,shared_boundary_seconds,timeout,memory_error,runtime_error,running,killed,not_run,launch_error,interrupted,configuration
+gm12878_25kb,Ours,prepared_matrix_to_output,chromosome,22,22,22,True,83.23705379082821,83.23705379082821,38.99900000100024,0,0,0,0,0,0,0,0,Objective without separator penalties
+gm12878_25kb,deepTAD,prepared_matrix_to_output,chromosome,22,22,22,True,77.65897883404978,77.65897883404978,38.99900000100024,0,0,0,0,0,0,0,0,
+gm12878_25kb,OnTAD,prepared_matrix_to_output,chromosome,22,22,22,True,106.22899320884608,106.22899320884608,0.0,0,0,0,0,0,0,0,0,
+gm12878_25kb,JOnTADS,prepared_matrix_to_output,chromosome,22,22,22,True,900.6092847085092,900.6092847085092,0.0,0,0,0,0,0,0,0,0,
+gm12878_25kb,deDoc2,prepared_matrix_to_output,chromosome,22,22,22,True,214.25066725187935,214.25066725187935,0.0,0,0,0,0,0,0,0,0,
+gm12878_25kb,RobusTAD,prepared_matrix_to_output,chromosome,22,22,22,True,909.3643327106256,909.3643327106256,0.0,0,0,0,0,0,0,0,0,author no-panel boundary mode
+gm12878_25kb,SpectralTAD,prepared_matrix_to_output,chromosome,22,22,22,True,59.079920209245756,59.079920209245756,0.0,0,0,0,0,0,0,0,0,3 levels
+gm12878_25kb,HiTAD,prepared_matrix_to_output,joint_22_autosomes,1,1,1,True,1107.154916250147,1107.154916250147,0.0,0,0,0,0,0,0,0,0,
+gm12878_10kb,Ours,prepared_matrix_to_output,chromosome,22,22,22,True,280.0293064152356,280.0293064152356,130.10420416644774,0,0,0,0,0,0,0,0,Objective without separator penalties
+gm12878_10kb,deepTAD,prepared_matrix_to_output,chromosome,22,22,22,True,248.5107235829346,248.5107235829346,130.10420416644774,0,0,0,0,0,0,0,0,
+gm12878_10kb,OnTAD,prepared_matrix_to_output,chromosome,22,22,22,True,845.5652442092542,845.5652442092542,0.0,0,0,0,0,0,0,0,0,
+gm12878_10kb,JOnTADS,prepared_matrix_to_output,chromosome,22,22,22,True,1202.5449157506227,1202.5449157506227,0.0,0,0,0,0,0,0,0,0,
+gm12878_10kb,deDoc2,prepared_matrix_to_output,chromosome,22,15,22,False,,1556.1809603723232,0.0,0,7,0,0,0,0,0,0,
+gm12878_10kb,RobusTAD,prepared_matrix_to_output,chromosome,22,22,22,True,3025.184464456048,3025.184464456048,0.0,0,0,0,0,0,0,0,0,author no-panel boundary mode
+gm12878_10kb,SpectralTAD,prepared_matrix_to_output,chromosome,22,22,22,True,121.4692260818556,121.4692260818556,0.0,0,0,0,0,0,0,0,0,3 levels
+gm12878_10kb,HiTAD,prepared_matrix_to_output,joint_22_autosomes,1,0,1,False,,1800.2107345419936,0.0,1,0,0,0,0,0,0,0,
+k562_25kb,Ours,prepared_matrix_to_output,chromosome,22,22,22,True,75.69528420781717,75.69528420781717,34.217844165628776,0,0,0,0,0,0,0,0,Objective without separator penalties
+k562_25kb,deepTAD,prepared_matrix_to_output,chromosome,22,22,22,True,70.67407833179459,70.67407833179459,34.217844165628776,0,0,0,0,0,0,0,0,
+k562_25kb,OnTAD,prepared_matrix_to_output,chromosome,22,22,22,True,134.89750816766173,134.89750816766173,0.0,0,0,0,0,0,0,0,0,
+k562_25kb,JOnTADS,prepared_matrix_to_output,chromosome,22,22,22,True,1303.788058709586,1303.788058709586,0.0,0,0,0,0,0,0,0,0,
+k562_25kb,deDoc2,prepared_matrix_to_output,chromosome,22,22,22,True,221.60850379057229,221.60850379057229,0.0,0,0,0,0,0,0,0,0,
+k562_25kb,RobusTAD,prepared_matrix_to_output,chromosome,22,22,22,True,993.118124952307,993.118124952307,0.0,0,0,0,0,0,0,0,0,author no-panel boundary mode
+k562_25kb,SpectralTAD,prepared_matrix_to_output,chromosome,22,22,22,True,61.177663042908534,61.177663042908534,0.0,0,0,0,0,0,0,0,0,3 levels
+k562_25kb,HiTAD,prepared_matrix_to_output,joint_22_autosomes,1,1,1,True,987.0871060418431,987.0871060418431,0.0,0,0,0,0,0,0,0,0,
+imr90_25kb,Ours,prepared_matrix_to_output,chromosome,22,22,22,True,79.43934387504123,79.43934387504123,37.12263408326544,0,0,0,0,0,0,0,0,Objective without separator penalties
+imr90_25kb,deepTAD,prepared_matrix_to_output,chromosome,22,22,22,True,74.91526345931925,74.91526345931925,37.12263408326544,0,0,0,0,0,0,0,0,
+imr90_25kb,OnTAD,prepared_matrix_to_output,chromosome,22,22,22,True,120.32916108309291,120.32916108309291,0.0,0,0,0,0,0,0,0,0,
+imr90_25kb,JOnTADS,prepared_matrix_to_output,chromosome,22,22,22,True,884.340566794388,884.340566794388,0.0,0,0,0,0,0,0,0,0,
+imr90_25kb,deDoc2,prepared_matrix_to_output,chromosome,22,22,22,True,258.53304012399167,258.53304012399167,0.0,0,0,0,0,0,0,0,0,
+imr90_25kb,RobusTAD,prepared_matrix_to_output,chromosome,22,22,22,True,1691.458018495934,1691.458018495934,0.0,0,0,0,0,0,0,0,0,author no-panel boundary mode
+imr90_25kb,SpectralTAD,prepared_matrix_to_output,chromosome,22,22,22,True,59.10417775227688,59.10417775227688,0.0,0,0,0,0,0,0,0,0,3 levels
+imr90_25kb,HiTAD,prepared_matrix_to_output,joint_22_autosomes,1,1,1,True,1226.9252211251296,1226.9252211251296,0.0,0,0,0,0,0,0,0,0,
+gm12878_5kb,Ours,prepared_matrix_to_output,chromosome,22,22,22,True,1046.5847553713247,1046.5847553713247,219.72611837415025,0,0,0,0,0,0,0,0,Objective without separator penalties
+gm12878_5kb,deepTAD,prepared_matrix_to_output,chromosome,22,22,22,True,381.225920121884,381.225920121884,219.72611837415025,0,0,0,0,0,0,0,0,
+gm12878_5kb,OnTAD,prepared_matrix_to_output,chromosome,22,22,22,True,3008.87249154062,3008.87249154062,0.0,0,0,0,0,0,0,0,0,
+gm12878_5kb,JOnTADS,prepared_matrix_to_output,chromosome,22,20,22,False,,2877.8741089163814,0.0,0,2,0,0,0,0,0,0,
+gm12878_5kb,deDoc2,prepared_matrix_to_output,chromosome,22,4,22,False,,1812.018356124172,0.0,0,18,0,0,0,0,0,0,
+gm12878_5kb,RobusTAD,prepared_matrix_to_output,chromosome,22,12,22,False,,21984.358887461247,427.7695394170005,8,2,0,0,0,0,0,0,177-sample hg38 reference panel
+gm12878_5kb,SpectralTAD,prepared_matrix_to_output,chromosome,22,22,22,True,541.6835559997708,541.6835559997708,0.0,0,0,0,0,0,0,0,0,3 levels
+gm12878_5kb,HiTAD,prepared_matrix_to_output,joint_22_autosomes,1,0,1,False,,19.575516832992435,0.0,0,1,0,0,0,0,0,0,
+k562_5kb,Ours,prepared_matrix_to_output,chromosome,22,22,22,True,849.6911501635332,849.6911501635332,210.73635358246975,0,0,0,0,0,0,0,0,Objective without separator penalties
+k562_5kb,deepTAD,prepared_matrix_to_output,chromosome,22,22,22,True,377.7867173731793,377.7867173731793,210.73635358246975,0,0,0,0,0,0,0,0,
+k562_5kb,OnTAD,prepared_matrix_to_output,chromosome,22,22,22,True,3302.3112226244994,3302.3112226244994,0.0,0,0,0,0,0,0,0,0,
+k562_5kb,JOnTADS,prepared_matrix_to_output,chromosome,22,20,22,False,,2304.8406594190747,0.0,0,2,0,0,0,0,0,0,
+k562_5kb,deDoc2,prepared_matrix_to_output,chromosome,22,4,22,False,,1738.5713842089754,0.0,0,18,0,0,0,0,0,0,
+k562_5kb,RobusTAD,prepared_matrix_to_output,chromosome,22,19,22,False,,13018.52128679282,180.06718841707334,1,2,0,0,0,0,0,0,177-sample hg38 reference panel
+k562_5kb,SpectralTAD,prepared_matrix_to_output,chromosome,22,22,22,True,548.0050613742787,548.0050613742787,0.0,0,0,0,0,0,0,0,0,3 levels
+k562_5kb,HiTAD,prepared_matrix_to_output,joint_22_autosomes,1,0,1,False,,1800.1978294160217,0.0,1,0,0,0,0,0,0,0,
+imr90_5kb,Ours,prepared_matrix_to_output,chromosome,22,22,22,True,1288.4339275017846,1288.4339275017846,203.43774299882352,0,0,0,0,0,0,0,0,Objective without separator penalties
+imr90_5kb,deepTAD,prepared_matrix_to_output,chromosome,22,22,22,True,364.47667603963055,364.47667603963055,203.43774299882352,0,0,0,0,0,0,0,0,
+imr90_5kb,OnTAD,prepared_matrix_to_output,chromosome,22,22,22,True,3030.5461678723805,3030.5461678723805,0.0,0,0,0,0,0,0,0,0,
+imr90_5kb,JOnTADS,prepared_matrix_to_output,chromosome,22,20,22,False,,2590.143103748327,0.0,0,2,0,0,0,0,0,0,
+imr90_5kb,deDoc2,prepared_matrix_to_output,chromosome,22,4,22,False,,1741.6095318309963,0.0,0,18,0,0,0,0,0,0,
+imr90_5kb,RobusTAD,prepared_matrix_to_output,chromosome,22,12,22,False,,21787.065988663817,188.40026799985208,8,2,0,0,0,0,0,0,177-sample hg38 reference panel
+imr90_5kb,SpectralTAD,prepared_matrix_to_output,chromosome,22,22,22,True,541.1932875434868,541.1932875434868,0.0,0,0,0,0,0,0,0,0,3 levels
+imr90_5kb,HiTAD,prepared_matrix_to_output,joint_22_autosomes,1,0,1,False,,1800.1969717498869,0.0,1,0,0,0,0,0,0,0,

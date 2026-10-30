@@ -1,0 +1,6 @@
+{
+  "source_repository": "https://github.com/KoyanoBunsho/faster_cky",
+  "source_commit": "9000de7a24371b7bb156d1fb0582104a044ac50c",
+  "release_date": "2026-10-30",
+  "note": "Export includes local experiment scripts not yet tracked in the source repository. copied_files.json records their content hashes. Local paths in copied records are made relative; numerical values are unchanged."
+}

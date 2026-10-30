@@ -1,0 +1,146 @@
+{
+  "rows": [
+    {
+      "condition": "gm12878_25kb",
+      "method": "deepTAD",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 38.99900000100024,
+      "post_inference_seconds": 38.659978833049536,
+      "total_seconds": 77.65897883404978,
+      "failures": ""
+    },
+    {
+      "condition": "gm12878_25kb",
+      "method": "KY-W",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 38.99900000100024,
+      "post_inference_seconds": 44.23805378982797,
+      "total_seconds": 83.23705379082821,
+      "failures": ""
+    },
+    {
+      "condition": "gm12878_10kb",
+      "method": "deepTAD",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 130.10420416644774,
+      "post_inference_seconds": 118.40651941648684,
+      "total_seconds": 248.5107235829346,
+      "failures": ""
+    },
+    {
+      "condition": "gm12878_10kb",
+      "method": "KY-W",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 130.10420416644774,
+      "post_inference_seconds": 149.92510224878788,
+      "total_seconds": 280.0293064152356,
+      "failures": ""
+    },
+    {
+      "condition": "imr90_25kb",
+      "method": "deepTAD",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 37.12263408326544,
+      "post_inference_seconds": 37.79262937605381,
+      "total_seconds": 74.91526345931925,
+      "failures": ""
+    },
+    {
+      "condition": "imr90_25kb",
+      "method": "KY-W",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 37.12263408326544,
+      "post_inference_seconds": 42.31670979177579,
+      "total_seconds": 79.43934387504123,
+      "failures": ""
+    },
+    {
+      "condition": "k562_25kb",
+      "method": "deepTAD",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 34.217844165628776,
+      "post_inference_seconds": 36.456234166165814,
+      "total_seconds": 70.67407833179459,
+      "failures": ""
+    },
+    {
+      "condition": "k562_25kb",
+      "method": "KY-W",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 34.217844165628776,
+      "post_inference_seconds": 41.47744004218839,
+      "total_seconds": 75.69528420781717,
+      "failures": ""
+    },
+    {
+      "condition": "gm12878_5kb",
+      "method": "deepTAD",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 219.72611837415025,
+      "post_inference_seconds": 161.49980174773373,
+      "total_seconds": 381.225920121884,
+      "failures": ""
+    },
+    {
+      "condition": "gm12878_5kb",
+      "method": "KY-W",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 219.72611837415025,
+      "post_inference_seconds": 826.8586369971745,
+      "total_seconds": 1046.5847553713247,
+      "failures": ""
+    },
+    {
+      "condition": "imr90_5kb",
+      "method": "deepTAD",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 203.43774299882352,
+      "post_inference_seconds": 161.03893304080702,
+      "total_seconds": 364.47667603963055,
+      "failures": ""
+    },
+    {
+      "condition": "imr90_5kb",
+      "method": "KY-W",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 203.43774299882352,
+      "post_inference_seconds": 1084.9961845029611,
+      "total_seconds": 1288.4339275017846,
+      "failures": ""
+    },
+    {
+      "condition": "k562_5kb",
+      "method": "deepTAD",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 210.73635358246975,
+      "post_inference_seconds": 167.05036379070953,
+      "total_seconds": 377.7867173731793,
+      "failures": ""
+    },
+    {
+      "condition": "k562_5kb",
+      "method": "KY-W",
+      "completed": 22,
+      "expected": 22,
+      "boundary_seconds": 210.73635358246975,
+      "post_inference_seconds": 638.9547965810634,
+      "total_seconds": 849.6911501635332,
+      "failures": ""
+    }
+  ],
+  "scope": "Sum of measured stages from prepared normalized matrices to domain files, including loading, model/process startup, boundary filtering, contact features, assembly, reporting, output and output consistency checks; excludes archive extraction, downloads and metric evaluation.",
+  "robustad_scope": "Fresh 22-autosome LMCC timing plus existing chromosome-level assembly and clean timings using the original frozen boundary file. The randomized boundary caller changes some flags on replay. These are independently measured stage sums, including censored timeouts, not one completed output-identical run."
+}

@@ -1,0 +1,46 @@
+\section{Comparison with Greedy Merging}
+\label{ssec:greedy-comparison}
+
+We compare our method with greedy merging under the same objective.
+To construct parent domains from consecutive atomic TADs, we initialize the ordered list of leaf ranges as $\mathcal P_0=([0,1),\ldots,[m-1,m))$.
+At iteration $t\in\{0,\ldots,m-2\}$, let $s=m-t$ be the number of current domains and write $\mathcal P_t=(I_0,\ldots,I_{s-1})$, where $I_r=[a_r,a_{r+1})$ for all $r\in\{0,\ldots,s-1\}$, with integer leaf indices $0=a_0<\cdots<a_s=m$.
+Merging $I_r$ and $I_{r+1}$ adds $W_{a_r,a_{r+2}}$ to the sum of parent-domain costs.
+We choose the merge with the smallest added cost:
+\[
+ r^\star=\min\operatorname*{arg\,min}_{r\in\{0,\ldots,s-2\}}W_{a_r,a_{r+2}}.
+\]
+The outer minimum selects the leftmost pair when several pairs have the same cost.
+We add a parent node representing $[a_{r^\star},a_{r^\star+2})$, with $I_{r^\star}$ and $I_{r^\star+1}$ as its two children.
+We update the list by
+\[
+ \mathcal P_{t+1}=(I_0,\ldots,I_{r^\star-1},\ I_{r^\star}\cup I_{r^\star+1},\ I_{r^\star+2},\ldots,I_{s-1}),
+\]
+where the prefix or suffix is omitted when the selected pair is at an end of the list.
+After $m-1$ merges, $\mathcal P_{m-1}=([0,m))$, and the recorded parent--child relationships define a full ordered binary tree.
+We fix the leaves, interval costs, fractions of parent domains retained, length caps, and ranking rules for both methods.
+Each of the seven combinations of cell line and resolution includes all 22 autosomes.
+
+In Table~\ref{tab:greedy-point}, greedy merging has higher adjusted $R^2$ in all seven combinations.
+Our method has higher intra-inter difference in six combinations and a larger fraction of parent domains with CTCF peaks near both endpoints in one.
+Exact minimization of the proposed objective therefore does not imply better scores on every evaluation metric.
+
+\begin{table}[htbp]
+\centering
+\caption{Values are Greedy / Ours, with the best value in each comparison shown in bold. Intra-inter difference values are multiplied by $10^4$ for 5 kb inputs only. CTCF gives the percentage of parent domains with peaks within $\pm10$ kb of both endpoints.}
+\label{tab:greedy-point}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrr}
+\toprule
+Cell & Res. & Adjusted $R^2$ & Intra-inter difference & CTCF\\
+\midrule
+GM12878 & 25 kb & \bestvalue{0.1837} / 0.1822 & 44.244 / \bestvalue{44.797} & \bestvalue{30.47} / 30.02\\
+GM12878 & 10 kb & \bestvalue{0.0827} / 0.0819 & 15.643 / \bestvalue{16.108} & \bestvalue{42.32} / 41.30\\
+K562 & 25 kb & \bestvalue{0.0919} / 0.0913 & 6.726 / \bestvalue{6.797} & \bestvalue{39.74} / 38.08\\
+IMR90 & 25 kb & \bestvalue{0.2323} / 0.2298 & 40.568 / \bestvalue{40.943} & 35.33 / \bestvalue{37.24}\\
+GM12878 & 5 kb & \bestvalue{0.1411} / 0.1392 & \bestvalue{57.108} / 56.962 & \bestvalue{50.50} / 49.09\\
+K562 & 5 kb & \bestvalue{0.0717} / 0.0703 & 65.831 / \bestvalue{66.779} & \bestvalue{60.28} / 58.37\\
+IMR90 & 5 kb & \bestvalue{0.1108} / 0.1105 & 87.281 / \bestvalue{88.431} & \bestvalue{51.05} / 50.69\\
+\bottomrule
+\end{tabular}
+\end{table}
