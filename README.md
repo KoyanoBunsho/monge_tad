@@ -8,7 +8,7 @@ MongeTAD extends deepTAD by keeping its predicted atomic TADs as fixed leaves an
 
 ## Quick start
 
-Run from the repository root with Python 3.11 or later:
+Execute the following commands from the repository root with Python 3.11 or later:
 
 ```bash
 python3 -m venv .venv
@@ -28,11 +28,11 @@ This command needs only the Python standard library. It does not download data o
 python3 scripts/reproduce_results.py --check-files
 ```
 
-It recomputes the chromosome means from the deposited records, checks them against the reported tables, and writes CSV and Markdown files to `results/reproduced/`. It verifies:
+The above command recomputes the chromosome means from the deposited records, checks them against the reported tables, and writes CSV and Markdown files to `results/reproduced/`. The above command verifies the following:
 
 - 154 chromosome evaluations: seven combinations of cell line and resolution, each using chromosomes 1–22.
 - Agreement between Knuth–Yao optimization and standard dynamic programming in all 4,601 evaluated regions.
-- Accuracy and execution status for eight methods across all seven combinations. Aggregate accuracy is reported for the 42 method–combination pairs completed on all 22 autosomes; the other 14 retain their execution status.
+- Accuracy and execution status for eight methods across all seven combinations. Overall accuracy is reported for the 42 method–combination pairs completed on all 22 autosomes; the other 14 keep their execution status.
 - 44 chromosome-level biological comparisons, comprising 1,819 parent-domain comparisons across the two reciprocal evaluations.
 - The ablation, matched-count, and greedy-merging results.
 
