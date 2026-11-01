@@ -6,8 +6,6 @@ Code and experimental results for **Fast and Accurate Optimization for Hierarchi
 
 MongeTAD extends deepTAD by keeping its predicted atomic TADs as fixed leaves and optimizing the full ordered binary tree. The objective penalizes contacts below their genomic-distance-dependent expectation and the genomic lengths of parent domains. Its Monge property and interval inclusion monotonicity permit exact Knuth–Yao optimization in O(m²) time for m atomic TADs, after contact-feature computation.
 
-The released objective contains **no separator penalties**. Contact-profile dissimilarity is used when selecting domains from the optimized tree. The older objective remains available only for the recorded ablation comparison.
-
 ## Quick start
 
 Run from the repository root with Python 3.11 or later:
