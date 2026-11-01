@@ -4,7 +4,7 @@ Code and experimental results for **Fast and Accurate Optimization for Hierarchi
 
 **Bunsho Koyano** · Independent researcher, Tokyo, Japan
 
-MongeTAD extends deepTAD by keeping its predicted atomic TADs as fixed leaves and optimizing the full ordered binary tree. The objective penalizes contacts below their genomic-distance-dependent expectation and the genomic lengths of parent domains. Its Monge property and interval inclusion monotonicity permit exact Knuth–Yao optimization in O(m²) time for m atomic TADs, after contact-feature computation.
+MongeTAD extends deepTAD by keeping its predicted atomic TADs as fixed leaves and optimizing the full ordered binary tree. The objective penalizes contacts below their genomic-distance-dependent expectation and the genomic lengths of parent domains. Based on the Monge property and interval inclusion monotonicity, we apply Knuth–Yao optimization in O(m²) time for m atomic TADs.
 
 ## Quick start
 
@@ -18,7 +18,7 @@ python examples/optimize_fixed_leaves.py
 python -m pytest -q
 ```
 
-The example compares Knuth–Yao optimization with standard O(m³) dynamic programming on a small synthetic input. The Python package retains the name `faster_cky` so that the experiment scripts use the same imports as the original implementation.
+The example compares Knuth–Yao optimization with standard O(m³) dynamic programming on a small synthetic input.
 
 ## Verify the published results
 
